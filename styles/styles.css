@@ -1,0 +1,443 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  transition: all 0.3s ease;
+  box-sizing: border-box;
+  font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+a,
+li {
+  text-decoration: none;
+  list-style: none;
+  color: hsl(0, 0%, 40%);
+}
+
+button {
+  border: 2px solid transparent;
+  color: #fff;
+  min-width: 200px;
+  line-height: 24px;
+  font-size: 12px;
+  padding: 13px 26px;
+  letter-spacing: 1px;
+  cursor: pointer;
+}
+
+nav {
+  height: 8.5vh;
+  width: 100%;
+  position: fixed;
+  gap: 25px;
+  background-color: white;
+  display: flex;
+  border-bottom: solid 1px hsl(0, 0%, 90%);
+}
+
+a:hover {
+  color: #745cf9;
+}
+
+ul {
+  display: flex;
+  margin: auto;
+  font-size: 14px;
+  gap: 20px;
+}
+
+.logo {
+  font-size: 24px;
+  margin: auto;
+  color: hsl(0, 0%, 40%);
+}
+
+.logo:hover {
+  color: hsl(0, 0%, 0%);
+}
+
+header {
+  background-image: url("../images/landing/header-image.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: 100vh;
+  text-align: center;
+}
+.header-text {
+  padding: 400px 0 0 0;
+  line-height: 80px;
+}
+
+.header-text h1 {
+  font-weight: 400;
+  font-size: 60px;
+  line-height: 64px;
+  color: whitesmoke;
+  font-family: inherit;
+}
+
+.header-text p {
+  color: whitesmoke;
+  font-size: 14px;
+}
+
+.btns {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: wrap;
+}
+
+.btn {
+  background-color: #745cf9;
+  border: 2px solid #745cf9;
+}
+
+.down {
+  background-color: transparent;
+  border: 2px solid #fff;
+}
+
+.down:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: black;
+}
+
+.sect {
+  display: flex;
+  height: 70vh;
+  font-size: 14px;
+  line-height: 24px;
+}
+
+.ima {
+  text-align: center;
+  height: 380px;
+  width: 1250px;
+  padding: 0 10px;
+  margin: auto;
+}
+.portfolio {
+  background-color: whitesmoke;
+}
+.ima img,
+.ima img {
+  height: 100%;
+  width: 100%;
+}
+
+.txt {
+  text-align: start;
+  padding: 0 50px;
+  margin: auto;
+}
+
+.txt div {
+  font-size: xx-large;
+  line-height: 50px;
+  margin: 20px;
+}
+
+.txt p {
+  font-size: 14px;
+  color: hsl(0, 0%, 60%);
+  padding: 20px;
+}
+
+.but {
+  padding: 5px;
+}
+
+.hove:hover {
+  background-color: hsl(249, 93%, 59%);
+  border: 2px solid hsl(249, 93%, 59%);
+}
+
+.parallax {
+  background-image: url("../images/parallax/photo.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: 50vh;
+  text-align: center;
+}
+
+.par-cont {
+  padding: 150px 200px 50px;
+  line-height: 30px;
+}
+
+.par-cont div {
+  color: #fff;
+  font-size: 60px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.par-cont p {
+  color: hsl(0, 0%, 95%);
+  font-size: 14px;
+  font-weight: 100;
+  padding: 10px;
+}
+
+.limit {
+  height: 130vh;
+  text-align: center;
+}
+
+.limit-txt {
+  font-size: 25px;
+  padding: 50px 20px 0;
+  margin: 50px 20px 0;
+}
+
+.limit p {
+  padding: 10px 90px;
+  margin: 10px 90px;
+  font-size: 14px;
+  color: hsl(0, 0%, 70%);
+}
+
+.limit-btn {
+  padding: 13px 0;
+  margin: 13px 0;
+}
+
+.limit-image {
+  width: 92%;
+  height: 79%;
+  margin: auto;
+}
+
+.limit-image img {
+  height: 100%;
+  width: 100%;
+}
+
+.project {
+  height: fit-content;
+  background-color: black;
+}
+
+.pext {
+  height: 25vh;
+  line-height: 80px;
+  padding: 70px 0 0 0;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.pext h1 {
+  font-size: 30px;
+}
+
+.pext p {
+  font-size: 15px;
+}
+
+.project-text {
+  background-color: #0e1015;
+  color: whitesmoke;
+  text-align: center;
+  line-height: 80px;
+  height: 30vh;
+  padding: 70px;
+}
+
+body {
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Project Image Grid */
+.project-images {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  padding: 20px;
+}
+
+/* Style for each project card */
+.project-card {
+  background-color: #0e1015;
+  color: whitesmoke;
+  border-radius: 2px;
+  overflow: hidden;
+  position: relative; /* Required for positioning the text */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  aspect-ratio: 1 / 1; /* Ensures square shape */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Styling for the image container */
+.project-img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.project-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensures image covers the container */
+  display: block; /* Remove any bottom space/gap */
+}
+
+/* Styling for the text section */
+.project-text {
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+  color: whitesmoke;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+/* Show text on hover */
+.project-card:hover .project-text {
+  opacity: 1;
+}
+
+.customers {
+  background-image: url("../images/customers/background.jpg");
+  background-repeat: no-repeat;
+  background-position: fixed;
+  background-size: cover;
+  height: 60vh;
+  text-align: center;
+  display: flex;
+  color: whitesmoke;
+  padding: 90px 200px;
+}
+
+.customers-txt h1 {
+  font-size: 25px;
+  line-height: 50px;
+}
+
+.customers-txt p {
+  font-size: 15px;
+  line-height: 20px;
+  padding: 10px 35px;
+}
+
+.customers-img {
+  padding: 10px 120px;
+}
+
+.customers-img img {
+  border-radius: 100px;
+}
+
+.customers-img h1 {
+  font-size: 15px;
+}
+
+.cust-but {
+  padding: 190px 5px;
+  font-size: 20px;
+  color: hsl(0, 0%, 70%);
+}
+
+.cust-but:hover {
+  color: #fff;
+}
+
+.clients {
+  height: 33vh;
+  background-color: #fff;
+}
+
+.clients-txt {
+  font-size: 30px;
+  text-align: center;
+  padding: 20px 0 0 0;
+}
+
+.clients-logo {
+  display: flex;
+  margin: 70px;
+  gap: 80px;
+  animation: scroll infinite 30s linear;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }100% {
+    transform: translateX(-100%);
+  }
+}
+
+.clients-img {
+  height: 90px;
+  width: 200px;
+}
+
+.clients-img img {
+  height: 100%;
+  width: 100%;
+}
+
+.download {
+  display: flex;
+  height: 30vh;
+  background-color: hsl(0, 0%, 94%);
+}
+
+.down-txt {
+  margin: auto;
+  font-size: 30px;
+}
+
+.down-btn {
+  margin: auto;
+}
+
+.color:hover {
+  color: hsl(249, 93%, 20%);
+}
+
+.word:hover {
+  color: hsl(249, 93%, 20%);
+}
+
+footer {
+  height: 15vh;
+  gap: 30px;
+  background-color: black;
+  color: white;
+  display: flex;
+}
+
+.footer-txt {
+  margin: auto;
+}
+
+.footer-logo {
+  margin: auto;
+  display: flex;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .project-images {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .project-images {
+    grid-template-columns: 1fr;
+  }
+}
+
